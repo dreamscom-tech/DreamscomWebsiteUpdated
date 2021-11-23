@@ -1,7 +1,6 @@
 header {
-  height: 10vh;
+  height: 100px;
   width: 100vw;
-  background-color: #02509a;
   color: white;
 }
 nav {
@@ -16,6 +15,30 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+.nav-item > a {
+  transition: all 0.1s ease-in-out;
+}
+.nav-item > a:hover {
+  color: #0056b9;
+}
 .logo {
   flex: 1;
+  height: 90%;
+}
+.nav-button-link {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-button-link > button {
+  border: none;
+  outline: none;
+  background-color: #0056b9;
+  color: white;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+.nav-button-link > button:hover {
+  opacity: 0.7;
 }
