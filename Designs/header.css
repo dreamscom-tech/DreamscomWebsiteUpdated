@@ -1,0 +1,21 @@
+header {
+  height: 10vh;
+  width: 100vw;
+  background-color: #02509a;
+  color: white;
+}
+nav {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  flex: 1;
+}
