@@ -57,3 +57,279 @@
 .quick-service > p {
   padding: 5px 0px;
 }
+
+/*from react*/
+.vision-mission-values-ctr {
+  width: 75%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.vision-mission-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: fit-content;
+  height: 250px;
+  border-radius: 5px;
+  flex: 1;
+  box-shadow: 0px 0px 15px #d9d9d9;
+  padding: 25px;
+}
+.vision-mission-values > i {
+  font-size: 36px;
+  color: #28a745;
+}
+.vision-mission-values-hdr {
+  font-size: 24px;
+  font-weight: 600;
+  color: red;
+  margin: 15px 0px;
+}
+.mission p {
+  color: #3872bd;
+}
+.vision {
+  margin-right: 45px;
+}
+.vision p {
+  color: #3872bd;
+}
+.core-values {
+  margin-left: 45px;
+}
+
+.core-values ul {
+  color: #3872bd;
+  margin-left: 20px;
+}
+
+.core-values ul li {
+  margin-bottom: 5px;
+}
+
+/*why us*/
+.why-us {
+  width: 75%;
+  margin: 150px auto;
+}
+.why-us-hdr {
+  text-align: center;
+  font-size: 35px;
+}
+.why-us-li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0px;
+}
+.why-us-li > li {
+  margin: 0px 50px;
+  flex: 1;
+}
+/*why us*/
+
+/*Products*/
+.product-ctr {
+  width: 75%;
+  margin: 75px auto;
+}
+.product-hdr {
+  text-align: center;
+}
+.product-hdr > .product-hdr-main {
+  font-size: 35px;
+  font-weight: 500;
+  padding: 10px 0px;
+}
+.product-hdr > .product-hdr-caption {
+  margin: 15px 0px;
+}
+.product {
+  margin: 120px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-content {
+  flex: 1;
+}
+.product-content > img {
+  width: 75%;
+  border-radius: 5px;
+}
+.product-content-hospitalplus > div:nth-child(2) {
+  margin: 20px 0px;
+}
+.product-content-hospitalplus > div:nth-child(1) > span:nth-child(1) {
+  font-size: 32px;
+}
+/*our team*/
+.our-team {
+  width: 75%;
+  margin: 25px auto;
+}
+.our-team > div:first-child {
+  margin: 45px 0px;
+  text-align: center;
+}
+.our-team > div:first-child > div:first-child {
+  font-size: 35px;
+  margin: 5px 0px;
+}
+.our-team > div:first-child > div:nth-child(2) {
+  font-style: italic;
+  font-size: 14px;
+  /* font-size: 35px; */
+  /* margin: 15px 0px; */
+}
+.our-team > div:nth-child(2) {
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.our-team-card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.our-team-card > div:nth-child(1) {
+  flex: 1;
+  margin-right: 15px;
+}
+.our-team-card > div:nth-child(2) {
+  flex: 2;
+  margin: 5px;
+}
+.our-team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.our-team-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+.our-team-role {
+  font-size: 15px;
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+.our-team-social > i {
+  color: #3872bd;
+  font-size: 20px;
+  margin-right: 5px;
+}
+/*our team*/
+
+/* customer-quote-message-ctr */
+.customer-quote {
+  width: 75%;
+  margin: 25px auto;
+}
+.customer-quote-ctr {
+  display: flex;
+  padding: 50px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  background: #fff;
+}
+.customer-quote-up {
+  color: darkblue;
+  font-size: 20px;
+}
+.customer-quote-down {
+  padding: 15px 0px;
+  color: #28a745;
+  font-size: 22px;
+}
+.customer-quote-down span {
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.customer-quote-hdr {
+  padding: 25px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #28a745;
+  background-color: #fff;
+  border-bottom: 2px solid red;
+}
+/*customer-quote-message-ctr */
+
+@media only screen and (max-width: 1024px) {
+  .vision-mission-values {
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .why-us-li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+    flex-direction: column;
+  }
+  .why-us-li > li {
+    margin: 15px 0px;
+  }
+  .our-team {
+    width: 95%;
+  }
+  .our-team > div:nth-child(2) {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .customer-quote {
+    width: 95%;
+  }
+  .customer-quote-ctr {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-ctr {
+    width: 95%;
+  }
+  .product {
+    margin: 45px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product > div {
+    margin: 35px;
+  }
+  .banner_text {
+    text-align: center;
+    padding-right: 0px;
+    margin-bottom: 50px;
+  }
+  .vision-mission-values-ctr {
+    width: 95%;
+    flex-direction: column;
+  }
+  .vision-mission-values {
+    margin: 20px 0px !important;
+    width: 100%;
+  }
+}
+
+/*from react*/
