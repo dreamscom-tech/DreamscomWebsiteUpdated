@@ -10,45 +10,114 @@
     </title>
 
     <!-- styles imported -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <link rel="stylesheet" href="../Designs/header.css" />
     <link rel="stylesheet" href="../Designs/main.css" />
     <link rel="stylesheet" href="../Designs/index.css" />
     <link rel="stylesheet" href="../Designs/services.css" />
+    <link rel="stylesheet" href="../Designs/footer.css" />
     <!-- styles imported -->
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <img src="../assets/logo.jpg" alt="LOGO" width="120px" height="90%" />
+      <!--for the side nav-->
+      <input type="checkbox" id="nav-toggle" />
+      <div class="sideBar-ctr">
+        <div class="sidebar">
+          <label for="nav-toggle" class="close-on-sm">
+            <span class="las la-times"></span>
+          </label>
+          <div class="sidebar-brand">
+            <h2>
+              <span class="las la-desktop" style="font-size: 32px"></span>
+              <span>Dreamscom</span>
+            </h2>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a>
+                  <span class="_a_replaced">
+                    <span class="las la-file-alt"></span>
+                    <span>Overview</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/services">
+                  <span class="_a_replaced">
+                    <span class="las la-people-carry"></span>
+                    <span>Services</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/#products">
+                  <span class="_a_replaced">
+                    <span class="lab la-product-hunt"></span>
+                    <span>Products</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/#our-team">
+                  <span class="_a_replaced">
+                    <span class="las la-users"></span>
+                    <span>The Team</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/contact">
+                  <span class="_a_replaced">
+                    <span class="las la-phone-volume"></span>
+                    <span>Contact Us</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <!--for the side nav-->
+
+      <nav>
+        <a class="logo" href="/">
+          <img src="../assets/logo.jpg" alt="LOGO" width="120px" height="90%" />
+        </a>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href=""> Overview </a>
-          </li>
           <li class="nav-item">
             <a href=""> Services </a>
           </li>
-          <li class="nav-item"><a href="">ICT Products</a></li>
-          <li class="nav-item"><a href="">Our Team</a></li>
+          <li class="nav-item"><a href="/#products">ICT Products</a></li>
+          <li class="nav-item"><a href="/#our-team">Our Team</a></li>
+          <li class="nav-item">
+            <a href=""> Pictorial </a>
+          </li>
         </ul>
-        <a href="" class="nav-button-link">
+        <a href="/contact/" class="nav-button-link">
           <button class="">Contact Us</button>
         </a>
+        <div class="menubars">
+          <label for="nav-toggle"><i class="las la-bars"></i></label>
+        </div>
       </nav>
     </header>
     <div class="main">
       <div class="content_container">
         <div>
           <div class="content_header">Our Services</div>
-          <div>...Quality Services Offered</div>
+          <div><i>...what we offer you</i></div>
         </div>
-
         <div>
           <div class="contents">
             <div class="content">
               <div>
-                <img src="{Training}" alt="Training" />
+                <img src="/assets/ict-training.jpg" alt="Training" />
               </div>
               <div>ICT Training and Internships</div>
               <div class="description">
@@ -59,7 +128,7 @@
             </div>
             <div class="content">
               <div>
-                <img src="{Repair}" alt="Repair" />
+                <img src="/assets/Computer-Repair.png" alt="Repair" />
               </div>
               <div>Computer Repair &amp; Maintenance</div>
               <div class="description">
@@ -69,7 +138,10 @@
             </div>
             <div class="content">
               <div>
-                <img src="{Software}" alt="Training" />
+                <img
+                  src="/assets/Software-Development.jpg"
+                  alt="Software Development"
+                />
               </div>
               <div>Software Development</div>
               <div class="description">
@@ -84,7 +156,7 @@
           <div class="contents">
             <div class="content">
               <div>
-                <img src="{Analysis}" alt="Training" />
+                <img src="/assets/data_analysis.jpg" alt="Data Analysis" />
               </div>
               <div>Data Analysis</div>
               <div class="description">
@@ -94,7 +166,7 @@
             </div>
             <div class="content">
               <div>
-                <img src="{Graphics}" alt="Training" />
+                <img src="/assets/graphics.jpg" alt="Graphics Design" />
               </div>
               <div>Computer Graphics Designs</div>
               <div class="description">
@@ -104,7 +176,10 @@
             </div>
             <div class="content">
               <div>
-                <img src="{App}" alt="Training" />
+                <img
+                  src="/assets/mobile-app.jpeg"
+                  alt="Mobile App Development"
+                />
               </div>
               <div>Mobile App. Development</div>
               <div class="description">
@@ -119,7 +194,10 @@
           <div class="contents">
             <div class="content">
               <div>
-                <img src="{Supply}" alt="Training" />
+                <img
+                  src="/assets/supply-of-computers.png"
+                  alt="Supply Of Computers"
+                />
               </div>
               <div>Supply Of Computers &amp; Accessories</div>
               <div class="description">
@@ -129,7 +207,7 @@
             </div>
             <div class="content">
               <div>
-                <img src="{Network}" alt="Training" />
+                <img src="/assets/networking.png" alt="Computer Networking" />
               </div>
               <div>Computer Networking</div>
               <div class="description">
@@ -139,7 +217,7 @@
             </div>
             <div class="content">
               <div>
-                <img src="{Consult}" alt="Training" />
+                <img src="/assets/ict-consult.jpg" alt="ICT Consultancy" />
               </div>
               <div>ICT Consultancy</div>
               <div class="description">
@@ -151,5 +229,82 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-ctr">
+        <div class="footer-content">
+          <div class="">Dreamscom Technologies LTD</div>
+          <div class="">
+            Renzo City House, Plot 43 Obote Avenue
+            <br />
+            <br />
+            P.O Box 130, Lira Uganda
+            <br />
+            <br />
+            dreamscomtechnologies@gmail.com
+            <br />
+            <br />
+            +256 772 280 228 / +256 708 344 133
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="">Products &amp; Services</div>
+          <div class="">
+            <ul>
+              <li>RXPlus - Pharmacy Management</li>
+              <li>HospitalPlus - Hospital Manager</li>
+              <li>StorePlus - Inventory Manager</li>
+              <li>SaccoPlus</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="">Dreamscom Technologies LTD</div>
+          <div class="">
+            <ul>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Clients and Partners</li>
+              <li>News and Events</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="">Follow Us</div>
+          <div class="">
+            <span>
+              <a
+                href="https://www.facebook.com/Dreamscom-Technologies-Limited-102776391480463"
+                target="_blank"
+              >
+                <i class="lab la-facebook-f la-lw"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://twitter.com/DreamscomTech" target="_blank">
+                <i class="lab la-twitter la-lw"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://wa.me/256708344133?text=Hi" target="_blank">
+                <i class="lab la-whatsapp la-lw"></i>
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <i class="lab la-linkedin la-lw"></i>
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.youtube.com/channel/UC51wrdlqH5kpBQ-_nVIXA9w"
+                target="_blank"
+              >
+                <i class="lab la-youtube la-lw"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

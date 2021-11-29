@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: -100px;
+  top: -180px;
 }
 .quick-service {
   margin: 0px 20px;
@@ -58,10 +58,13 @@
   padding: 5px 0px;
 }
 
+.vision-mission-values-ctr {
+  margin-top: 320px;
+}
 /*from react*/
 .vision-mission-values-ctr {
   width: 75%;
-  margin: 100px auto;
+  margin: 240px auto 100px auto;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -266,16 +269,35 @@
   border-bottom: 2px solid red;
 }
 /*customer-quote-message-ctr */
-
+@media screen and (max-width: 1200px) {
+  .banner-text {
+    font-size: 36px;
+    font-weight: bold;
+    width: 75%;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .vision-mission-values {
     height: fit-content;
   }
+  .quick-services {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .banner {
+    height: 60vh;
+  }
+  .quick-service {
+    margin: 20px 0px;
+  }
+  .quick-services-abs {
     flex-direction: column;
-    width: 95%;
+    position: relative;
+    /* top: 0; */
+  }
+  .vision-mission-values-ctr {
+    margin-top: 0px;
   }
 
   .why-us-li {
@@ -331,5 +353,14 @@
     width: 100%;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .banner-text {
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+  }
+  .quick-services-abs {
+    top: -100px;
+  }
+}
 /*from react*/
