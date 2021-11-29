@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>
       Dreamscom Technologies | We Provide Quality IT Services To Your
       Organisation
     </title>
-
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
     <!-- styles imported -->
     <link
       rel="stylesheet"
@@ -358,7 +359,9 @@
               a given period of time.
             </div>
             <div class="product-content-contact">
-              <button class="services">Send An Inquiry</button>
+              <a href="/contact"
+                ><button class="btn">Send An Inquiry</button></a
+              >
             </div>
           </div>
         </div>
@@ -377,7 +380,9 @@
               of the commodities.
             </div>
             <div class="product-content-contact">
-              <button class="services">Send An Inquiry</button>
+              <a href="/contact"
+                ><button class="btn">Send An Inquiry</button></a
+              >
             </div>
           </div>
           <div class="product-content">
@@ -403,7 +408,9 @@
               smooth, communication becomes better and faster.
             </div>
             <div class="product-content-contact">
-              <button class="services">Send An Inquiry</button>
+              <a href="/contact"
+                ><button class="btn">Send An Inquiry</button></a
+              >
             </div>
           </div>
         </div>
@@ -486,5 +493,15 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      let doc = document.getElementsByTagName("body")[0];
+      doc.addEventListener("mousemove", (e) => {
+        // let moveX = (e.pageX * -1) / 5;
+        let moveY = (e.pageY * -1) / 15;
+
+        document.getElementsByClassName("banner")[0].style.backgroundPosition =
+          0 + "px " + moveY + "px";
+      });
+    </script>
   </body>
 </html>

@@ -15,3 +15,15 @@ a {
   color: black;
   text-decoration: none;
 }
+.btn {
+  border: 0;
+  outline: 0;
+  background-color: #2f5be7;
+  height: 35px;
+  width: 130px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}

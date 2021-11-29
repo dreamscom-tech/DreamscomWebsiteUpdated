@@ -44,9 +44,9 @@
   border-radius: 10px;
 }
 .contact {
-  width: 75%;
-  margin: auto;
-  margin-bottom: 20px;
+  width: 65%;
+  /* margin: auto; */
+  margin: 32px auto;
 }
 .contact-box {
   display: flex;
@@ -97,17 +97,6 @@ label {
   display: block;
   color: #2d378e;
 }
-/* button {
-  background-color: #2d378e;
-  width: 100px;
-  border: none;
-  outline: none;
-  color: #fff;
-  height: 35px;
-  border-radius: 30px;
-  margin-top: 20px;
-  box-shadow: 0 5px 15px 0px rgba(28, 0, 181, 0.3);
-} */
 .contact-left h3 {
   color: #2d378e;
   font-weight: 600;
@@ -124,7 +113,7 @@ tr td {
   padding-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .contact {
     width: 95%;
   }
