@@ -23,6 +23,7 @@
     <!-- styles imported -->
   </head>
   <body>
+    <div class="div-gradient"></div>
     <header>
       <!--for the side nav-->
       <input type="checkbox" id="nav-toggle" />
@@ -114,6 +115,9 @@
           <div class="banner-text">
             We are passionate about connecting you to the ICT GRID
           </div>
+          <div class="banner-img">
+            <img src="./assets/banner-connect.jpg" alt="" />
+          </div>
         </div>
       </section>
       <section class="quick-services-ctr">
@@ -128,19 +132,11 @@
               </p>
             </div>
             <div class="quick-service">
-              <img src="./assets/Software-Development.jpg" alt="" />
-              <div>Management Systems</div>
+              <img src="./assets/Computer-Repair.png" alt="" />
+              <div>Field Works</div>
               <p>
-                IT Solutions we provide include Organisation Management Systems,
-                Which help you smoothly run your business
-              </p>
-            </div>
-            <div class="quick-service">
-              <img src="./assets/Software-Development.jpg" alt="" />
-              <div>Management Systems</div>
-              <p>
-                IT Solutions we provide include Organisation Management Systems,
-                Which help you smoothly run your business
+                We do networking, computer servicing and maintanance to
+                different organisations.
               </p>
             </div>
           </div>
@@ -331,6 +327,20 @@
               </div>
             </div>
           </div>
+          <div class="our-team-card">
+            <div class="">
+              <img src="./assets/Smash-Allan.jpg" alt="" />
+            </div>
+            <div>
+              <div class="our-team-name">Allan Ogwang</div>
+              <div class="our-team-role">Marketing Director</div>
+              <div class="our-team-social">
+                <i class="lab la-linkedin"></i>
+                <i class="lab la-twitter"></i>
+                <i class="las la-envelope"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="product-ctr" id="products">
@@ -493,15 +503,5 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript">
-      let doc = document.getElementsByTagName("body")[0];
-      doc.addEventListener("mousemove", (e) => {
-        // let moveX = (e.pageX * -1) / 5;
-        let moveY = (e.pageY * -1) / 15;
-
-        document.getElementsByClassName("banner")[0].style.backgroundPosition =
-          0 + "px " + moveY + "px";
-      });
-    </script>
   </body>
 </html>
