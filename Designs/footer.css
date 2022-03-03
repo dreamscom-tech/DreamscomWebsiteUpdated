@@ -11,6 +11,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.footer-content .lab {
+  color: rgba(255, 255, 255, 0.5);
+}
 .footer-content > div:nth-child(1) {
   margin-top: 20px;
   font-size: 17.5px;
